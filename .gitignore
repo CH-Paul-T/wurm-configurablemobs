@@ -7,5 +7,6 @@ compiled
 *compiled
 *compiled/
 *compiled/*
+.gitignore
 /src/bacon/thepaul_t/wurmmod/configurablemobs/com
 /src/bacon/thepaul_t/wurmmod/configurablemobs/com/*
