@@ -1,0 +1,41 @@
+package bacon.thepaul_t.wurmmod.configurablemobs;
+
+public class custommobTemplate {
+	String identifier = "";
+	String name = "";
+	String description = "";
+	String model = "";
+	int[] types;
+	byte bodyType = 0;
+	short vision = 0;
+	byte sex = 0;
+	short centimetersHigh = 0;
+	short centimetersLong = 0;
+	short centimetersWide = 0;
+	String deathSndMale = "";
+	String deathSndFemale = "";
+	String hitSndMale = "";
+	String hitSndFemale = "";
+	float naturalArmour = 0.0F;
+	float handDam = 0.0F;
+	float kickDam = 0.0F;
+	float biteDam = 0.0F;
+	float headDam = 0.0F;
+	float breathDam = 0.0F;
+	float speed = 0.0F;
+	int moveRate = 0;
+	int[] itemsDropped;
+	int maxHuntDist = 0;
+	int aggress = 0;
+	byte meatMaterial = 0;
+	int[][] skills;
+	String handAttack = "";
+	int maxAge = 0;
+	int armourType = 0;
+	float combatRating = 0.0F;
+	byte damageType = 0;
+	float alignment = 0.0F;
+	boolean glowing = false;
+	custommobAttack[] attacks;
+	custommobEncounter[] encounters;
+}

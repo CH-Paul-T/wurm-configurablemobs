@@ -1,0 +1,11 @@
+*bin/*
+*bin/
+.settings
+.classpath
+.project
+compiled
+*compiled
+*compiled/
+*compiled/*
+/src/bacon/thepaul_t/wurmmod/configurablemobs/com
+/src/bacon/thepaul_t/wurmmod/configurablemobs/com/*
