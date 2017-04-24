@@ -29,15 +29,19 @@ public class custommob implements ModCreature, CreatureTypes {
         	logger.log(Level.INFO, "Adding skill '"+mobData.skills[i][0]+"' to '"+mobData.identifier+"' ("+this.templateId+").");
         	builder.skill(mobData.skills[i][0], (float) mobData.skills[i][1]);
         }
-        builder.boundsValues(-0.5F, -1.0F, 0.5F, 1.42F);
+        builder.boundsValues(mobData.boundsBox[0],mobData.boundsBox[1],mobData.boundsBox[2],mobData.boundsBox[3]);
         builder.handDamString(mobData.handAttack);
         builder.maxAge(mobData.maxAge);
         builder.armourType(mobData.armourType);
         builder.baseCombatRating(mobData.combatRating);
         builder.combatDamageType(mobData.damageType);
         builder.maxGroupAttackSize(4);
+        builder.maxPercentOfCreatures(mobData.maxPerc);
+        builder.sizeModifier(mobData.sizeModifier[0], mobData.sizeModifier[1], mobData.sizeModifier[2]);
         builder.usesNewAttacks(true);
         builder.alignment(mobData.alignment);
+        builder.denMaterial(mobData.denMaterial);
+        builder.denName(mobData.denName);
         builder.glowing(mobData.glowing);
         for(int i=0; i < mobData.attacks.length; i++)
         {

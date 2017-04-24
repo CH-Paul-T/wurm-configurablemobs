@@ -9,6 +9,8 @@ public class custommobTemplate {
 	byte bodyType = 0;
 	short vision = 0;
 	byte sex = 0;
+	byte denMaterial = 0;
+	String denName = "";
 	short centimetersHigh = 0;
 	short centimetersLong = 0;
 	short centimetersWide = 0;
@@ -22,9 +24,12 @@ public class custommobTemplate {
 	float biteDam = 0.0F;
 	float headDam = 0.0F;
 	float breathDam = 0.0F;
+	float maxPerc = 0.0F;
+	float[] boundsBox = new float[4];
 	float speed = 0.0F;
 	int moveRate = 0;
 	int[] itemsDropped;
+	int[] sizeModifier = new int[3];
 	int maxHuntDist = 0;
 	int aggress = 0;
 	byte meatMaterial = 0;
